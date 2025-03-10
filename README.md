@@ -15,7 +15,7 @@ curl -H "X-MyHeader: FooBar" localhost:8080/foo?bar=baz
 ```
 
 ```
-simon:dummyhttp $ docker run --rm -p 8080:8080 dummyhttp
+simon:dummyhttp $ docker run --rm --init -p 8080:8080 dummyhttp
 dummyhttp v1.1.0 listening on http://0.0.0.0:8080
 2025-39-10 18:39:17 192.168.65.1:35522 GET /foo?bar=baz HTTP/1.1
 ┌─Incoming request
